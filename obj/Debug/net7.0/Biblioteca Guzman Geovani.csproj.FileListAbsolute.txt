@@ -1,0 +1,76 @@
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\appsettings.json
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Biblioteca Guzman Geovani.staticwebassets.runtime.json
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Biblioteca Guzman Geovani.exe
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Biblioteca Guzman Geovani.deps.json
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Biblioteca Guzman Geovani.runtimeconfig.json
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Biblioteca Guzman Geovani.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Biblioteca Guzman Geovani.pdb
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Humanizer.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.csproj.AssemblyReference.cache
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.AssemblyInfoInputs.cache
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.AssemblyInfo.cs
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.csproj.CoreCompileInputs.cache
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.RazorAssemblyInfo.cache
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.RazorAssemblyInfo.cs
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\staticwebassets\msbuild.Biblioteca Guzman Geovani.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\staticwebassets\msbuild.build.Biblioteca Guzman Geovani.props
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Biblioteca Guzman Geovani.props
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Biblioteca Guzman Geovani.props
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\scopedcss\bundle\Biblioteca Guzman Geovani.styles.css
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\scopedcss\projectbundle\Biblioteca Guzman Geovani.bundle.scp.css
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Bibliote.7BBC792C.Up2Date
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\refint\Biblioteca Guzman Geovani.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.pdb
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\Biblioteca Guzman Geovani.genruntimeconfig.cache
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\ref\Biblioteca Guzman Geovani.dll
+C:\Users\geova\source\repos\Biblioteca Guzman Geovani\obj\Debug\net7.0\scopedcss\Views\Shared\_LayoutDashBoard.cshtml.rz.scp.css

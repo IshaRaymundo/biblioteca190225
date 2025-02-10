@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Biblioteca Guzman Geovani.props" />
+</Project>
