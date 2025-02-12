@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "_LayoutDashBoard";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4"><i class="fas fa-chart-bar"></i> Reportes de Uso</h2>
+
+    <canvas id="graficoUsuarios"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+        var ctx = document.getElementById('graficoUsuarios').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Enero', 'Febrero', 'Marzo', 'Abril'],
+                datasets: [{
+                    label: 'Usuarios Activos',
+                    data: [20, 35, 40, 50],
+                    backgroundColor: ['#1e3c72', '#2a5298', '#4a90e2', '#72b4e0']
+                }]
+            }
+        });
+    });</script>

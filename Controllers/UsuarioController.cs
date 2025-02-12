@@ -1,7 +1,8 @@
-﻿using Biblioteca_Guzman_Geovani.Services.IServices;
+﻿using Biblioteca_Jonathan_Hernandez.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
+using Biblioteca_Jonathan_Hernandez.Models.Domain;
 
-namespace Biblioteca_Guzman_Geovani.Controllers
+namespace Biblioteca_Jonathan_Hernandez.Controllers
 {
     public class UsuarioController : Controller
     {
@@ -10,10 +11,35 @@ namespace Biblioteca_Guzman_Geovani.Controllers
 
             _usuarioService = usuarioService;
         }
+
+
         public IActionResult Index()
         {
             var result = _usuarioService.ObtenerUsuarios();
             return View(result);
+        }
+
+
+        [HttpGet]
+        public IActionResult Crear()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Crear(Usuario request)
+        {
+            _usuarioService.CrearUsuario(request);
+            return RedirectToAction("Index");
+        }
+
+
+        [HttpGet]
+        public IActionResult Editar(int id)
+        {
+            var result = _usuarioService.GetUsuarioById(id);
+            return View();
         }
     }
 }

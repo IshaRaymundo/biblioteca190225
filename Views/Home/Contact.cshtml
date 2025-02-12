@@ -1,8 +1,40 @@
-﻿@model IEnumerable<Biblioteca_Guzman_Geovani.Models.Domain.Usuario>
-
-@{
+﻿@{
     Layout = "_LayoutDashBoard";
+    ViewData["Title"] = "Contacto";
 }
 
-<h2>📞 Contacto</h2>
-<p>Aquí van los datos de contacto.</p>
+<div class="container mt-5">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h2><i class="fas fa-address-book"></i> Contacto</h2>
+        </div>
+        <div class="card-body">
+            <p class="lead">Ponte en contacto con nosotros para cualquier consulta o sugerencia.</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><i class="fas fa-phone-alt"></i> Teléfono</h4>
+                    <p>(+52) 998 123 4567</p>
+
+                    <h4><i class="fas fa-envelope"></i> Correo Electrónico</h4>
+                    <p>contacto@bibliotecajh.com</p>
+                </div>
+
+                <div class="col-md-6">
+                    <h4><i class="fas fa-map-marker-alt"></i> Dirección</h4>
+                    <p>Calle 123, Cancún, Quintana Roo, México</p>
+
+                    <h4><i class="fas fa-clock"></i> Horario de Atención</h4>
+                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                    <p>Sábados: 10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a href="mailto:contacto@bibliotecajh.com" class="btn btn-success">
+                    <i class="fas fa-envelope-open-text"></i> Enviar Correo
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Biblioteca_Guzman_Geovani.Context;
-using Biblioteca_Guzman_Geovani.Services.IServices;
-using Biblioteca_Guzman_Geovani.Services.Services;
+using Biblioteca_Jonathan_Hernandez.Context;
+using Biblioteca_Jonathan_Hernandez.Services.IServices;
+using Biblioteca_Jonathan_Hernandez.Services.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
-    builder.Configuration.GetConnectionString("DefaultConnetion")));
+    builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 

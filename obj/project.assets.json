@@ -3462,36 +3462,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\geova\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/jonathanhernandez/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\geova\\source\\repos\\Biblioteca Guzman Geovani\\Biblioteca Guzman Geovani.csproj",
-      "projectName": "Biblioteca Guzman Geovani",
-      "projectPath": "C:\\Users\\geova\\source\\repos\\Biblioteca Guzman Geovani\\Biblioteca Guzman Geovani.csproj",
-      "packagesPath": "C:\\Users\\geova\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\geova\\source\\repos\\Biblioteca Guzman Geovani\\obj\\",
+      "projectUniqueName": "/Users/jonathanhernandez/Documents/Majo/Library/Biblioteca Jonathan Hernandez.csproj",
+      "projectName": "Biblioteca Jonathan Hernandez",
+      "projectPath": "/Users/jonathanhernandez/Documents/Majo/Library/Biblioteca Jonathan Hernandez.csproj",
+      "packagesPath": "/Users/jonathanhernandez/.nuget/packages/",
+      "outputPath": "/Users/jonathanhernandez/Documents/Majo/Library/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\geova\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.1.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/jonathanhernandez/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 24.1\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3549,7 +3537,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
       }
     }
   }

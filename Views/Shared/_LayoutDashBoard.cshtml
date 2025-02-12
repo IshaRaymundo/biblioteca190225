@@ -1,75 +1,125 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Biblioteca Guzmán Geovani</title>
+    <title>@ViewData["Title"]Biblioteca Jonathan Hernandez</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Biblioteca_Guzman_Geovani.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Biblioteca_Jonathan_Hernandez.styles.css" asp-append-version="true" />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <style>
-        /* Estilos para el sidebar */
+        /* Estilos mejorados para el sidebar */
         .sidebar {
-            width: 250px;
+            width: 260px;
             height: 100vh;
             position: fixed;
-            background: #343a40;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
             padding-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
         }
-        .sidebar a {
-            display: block;
-            padding: 15px;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .sidebar a:hover {
-            background: #495057;
-        }
+
+            .sidebar h3 {
+                font-size: 22px;
+                text-align: center;
+                margin-bottom: 20px;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            .sidebar a {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 12px 20px;
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                transition: background 0.3s, transform 0.2s;
+                border-radius: 8px;
+                margin: 5px 15px;
+            }
+
+                .sidebar a i {
+                    font-size: 22px;
+                    width: 30px;
+                    text-align: center;
+                }
+
+                .sidebar a:hover {
+                    background: rgba(255, 255, 255, 0.2);
+                    transform: scale(1.05);
+                }
+
         .content {
-            margin-left: 250px;
+            margin-left: 260px;
             padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: #1e3c72;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .footer {
+            background: #2a5298;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div class="d-flex">
-        <!-- Sidebar -->
+        <!-- Sidebar Mejorado -->
         <div class="sidebar">
-            <h3 class="text-center">📚 Biblioteca</h3>
-            <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-home"></i> Home</a>
+            <h3>📚 Biblioteca</h3>
+            <a asp-area="" asp-controller="Usuario" asp-action="Index"><i class="fas fa-home"></i> Inicio</a>
             <a asp-area="" asp-controller="Home" asp-action="Contact"><i class="fas fa-envelope"></i> Contacto</a>
-
-            <a asp-area="" asp-controller="Settings" asp-action="Index"><i class="fas fa-cog"></i> Configuración</a>
-            <a asp-area="" asp-controller="Users" asp-action="Index"><i class="fas fa-users"></i> Usuarios</a>
-            <a asp-area="" asp-controller="Help" asp-action="Index"><i class="fas fa-question-circle"></i> Ayuda</a>
+            <a asp-area="" asp-controller="Home" asp-action="Config"><i class="fas fa-cogs"></i> Configuración</a>
+            <a asp-area="" asp-controller="Home" asp-action="Users"><i class="fas fa-users"></i> Usuarios</a>
+            <a asp-area="" asp-controller="Home" asp-action="Libros"><i class="fas fa-book"></i> Libros</a>
+            <a asp-area="" asp-controller="Home" asp-action="Prestamos"><i class="fas fa-hand-holding"></i> Préstamos</a>
+            <a asp-area="" asp-controller="Home" asp-action="Reportes"><i class="fas fa-chart-bar"></i> Reportes</a>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-question-circle"></i> Ayuda</a>
         </div>
 
-        <!-- Contenido principal -->
+        <!-- Contenido Principal -->
         <div class="content w-100">
-            <header class="bg-dark text-white p-3 text-center">
-                <h2>Panel de Administración</h2>
+            <header class="header">
+                Panel de Administración
             </header>
 
-            <!-- 🔹 Aquí se muestra "Hola Mundo" -->
-         @*    <div class="container text-center my-4">
-                <h1 class="text-primary">Hola Mundo</h1>
-            </div> *@
-
-            <div class="container">
+            <div class="container main-content">
                 <main role="main" class="pb-3">
                     @RenderBody()
                 </main>
             </div>
 
-            <footer class="border-top footer text-muted text-center mt-4">
-                <div class="container">
-                    &copy; 2025 - Biblioteca Guzmán Geovani - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                </div>
+            <footer class="footer mt-4">
+                &copy; 2025 - Biblioteca Jonathan Hernandez -
+                <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color: white; text-decoration: none;">Privacidad</a>
             </footer>
         </div>
     </div>

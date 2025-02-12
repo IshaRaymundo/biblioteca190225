@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{B50F26A4-1701-438E-8FB8-375162CDB36F}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Biblioteca_220Jonathan_220Hernandez PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Services/Services/UsuarioService.cs" Line="16" Column="47" />
+      <File FileName="appsettings.json" Line="11" Column="4" />
+      <File FileName="Controllers/UsuarioController.cs" Line="19" Column="2" />
+      <File FileName="Program.cs" Line="5" Column="55" />
+      <File FileName="Context/ApplicationDbContext.cs" Line="36" Column="1" />
+      <File FileName="Models/Domain/Usuario.cs" Line="19" Column="3" />
+      <File FileName="Models/Domain/Rol.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Biblioteca Jonathan Hernandez">
+            <Node name="Biblioteca Jonathan Hernandez">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Models">
+                <Node name="Domain" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
