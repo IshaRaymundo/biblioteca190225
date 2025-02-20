@@ -1,98 +1,165 @@
-﻿
-@model IEnumerable<Biblioteca_Jonathan_Hernandez.Models.Domain.Usuario>
-
+﻿@model IEnumerable<Biblioteca_Mia_Raymundo.Models.Domain.Usuario>
 @{
     Layout = "_LayoutDashBoard";
 }
 
-<h1>
-    Dashoard
-</h1>
-
-
-<div class="row">
-    <div class="offset-10 col-3 mb-3">
-        <a asp-action="Crear" asp-controller="Usuario" class="btn-success mx-auto btn-lg"> <i class="fa-solid fa-user"></i>Nuevo</a>
-    </div>
-</div>
+<h1>Dashboard</h1>
 
 <div class="container-fluid">
-    <div class="offset-12">
-        <div class="card border">
-            <div class="card-header bg-dark">
-                <h1 class="text-white"><strong>Lista de usuarios</strong></h1>
-
-            </div>
-
-            <div class="card-body">
-                <div class="table-responsive">
-
-                    @if (Model.Count() > 0)
-
-                    {
-
-                        <table class="table table-bordered" id="tblUsuarios" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-
-                                    <th> @Html.DisplayNameFor(x => x.Nombre) </th>
-                                    <th> @Html.DisplayNameFor(x => x.UserName) </th>
-                                    <th> @Html.DisplayNameFor(x => x.Password) </th>
-                                    <th> Rol</th>
-
-                                </tr>
-
-
-                            </thead>
-                            <tbody>
-
-                                @{
-                                    int i = 1;
-                                }
-                                @foreach (var Item in Model)
-
-                                {
-
-
-                                    <tr>
-
-                                        <td> @Html.DisplayFor(x => Item.Nombre) </td>
-                                        <td> @Html.DisplayFor(x => Item.UserName) </td>
-                                        <td> @Html.DisplayFor(x => Item.Password) </td>
-                                        <td> @Html.DisplayFor(x => Item.Roles.Nombre) </td>
-
-                                        <td>
-                                            <a class=" btn btn-warning" asp-action="Editar" asp-route-id=@Item.PkUsuario><i class="fa-solid fa-pen-to-square"></i> Editar</a>
-                                            <a class=" btn btn-danger" asp-action="" asp-route-id=""><i class="fa-solid fa-trash"></i> Eliminar</a>
-                                        </td>
-
-                                    </tr>
-
-
-                                }
-
-                            </tbody>
-
-                        </table>
-
-                    }
-
-                    else
-
-                    {
-                        <p>No hay registros</p>
-                    }
-                </div>
-
-            </div>
-
-
+    <div class="card border">
+        <div class="card-header bg-dark">
+            <h1 class="text-white"><strong>Lista de usuarios</strong></h1>
         </div>
 
+        <div class="card-body">
+            <!-- Botón para agregar usuario -->
+            <div class="d-flex justify-content-between mb-3">
+                <a asp-action="Crear" asp-controller="Usuario" class="btn btn-success">
+                    <i class="fa-solid fa-user-plus"></i> Nuevo Usuario
+                </a>
+            </div>
+
+            <div class="table-responsive">
+                @if (Model.Any())
+                {
+                    <table class="table table-bordered" id="tblUsuarios">
+                        <thead>
+                            <tr>
+                                <th>@Html.DisplayNameFor(x => x.Nombre)</th>
+                                <th>@Html.DisplayNameFor(x => x.UserName)</th>
+                                <th>@Html.DisplayNameFor(x => x.Password)</th>
+                                <th>@Html.DisplayNameFor(x => x.FkRol)</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var Item in Model)
+                            {
+                                <tr>
+                                    <td>@Item.Nombre</td>
+                                    <td>@Item.UserName</td>
+                                    <td>@Item.Password</td>
+                                    <td>@Item.Roles.Nombre</td>
+                                    <td>
+                                        <a class="btn btn-warning" asp-action="Editar" asp-route-id="@Item.PkUsuario">
+                                            <i class="fa-solid fa-pen-to-square"></i> Editar
+                                        </a>
+                                        <button class="btn btn-danger eliminar-usuario"
+                                                data-id="@Item.PkUsuario" data-nombre="@Item.Nombre">
+                                            <i class="fa-solid fa-trash"></i> Eliminar
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p>No hay registros</p>
+                }
+            </div>
+        </div>
 
     </div>
-
-
-
-
 </div>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            console.log("✅ Script cargado correctamente");
+
+            // Verifica si jQuery está cargado
+            if (typeof $ === 'undefined') {
+                console.error("❌ jQuery NO está cargado.");
+            } else {
+                console.log("✅ jQuery está cargado correctamente.");
+            }
+
+            // Inicializar DataTables
+            $('#tblUsuarios').DataTable({
+                language: {
+                    "emptyTable": "No hay información",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primero",
+                        "last": "Último",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
+                    }
+                }
+            });
+
+            // Delegar evento para los botones de eliminar
+            $(document).on('click', '.eliminar-usuario', function () {
+                console.log("🟢 Se hizo clic en un botón de eliminar");
+
+                var usuarioId = $(this).data('id');
+                var usuarioNombre = $(this).data('nombre');
+
+                if (!usuarioId) {
+                    console.error("❌ Error: data-id no está definido en el botón de eliminar.");
+                    return;
+                }
+
+                console.log(`🟢 ID del usuario a eliminar: ${usuarioId}`);
+                console.log(`🟢 Nombre del usuario a eliminar: ${usuarioNombre}`);
+
+                Swal.fire({
+                    title: "¿Estás seguro?",
+                    text: "Eliminarás a " + usuarioNombre + ". Esta acción no se puede deshacer.",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Sí, eliminar",
+                    cancelButtonText: "Cancelar"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        console.log("🟢 Usuario confirmado para eliminación, enviando petición AJAX...");
+
+                        $.ajax({
+                            url: '/Usuario/EliminarUsuario/' + usuarioId,
+                            type: 'DELETE',
+                            success: function (response) {
+                                console.log("🟢 Respuesta del servidor:", response);
+
+                                if (response.success) {
+                                    Swal.fire({
+                                        title: "¡Eliminado!",
+                                        text: response.message,
+                                        icon: "success",
+                                        timer: 1500,
+                                        showConfirmButton: false
+                                    }).then(() => {
+                                        location.reload();
+                                    });
+                                } else {
+                                    console.error("❌ Error en la eliminación:", response.message);
+                                    Swal.fire({
+                                        title: "Error",
+                                        text: response.message,
+                                        icon: "error"
+                                    });
+                                }
+                            },
+                            error: function (xhr, status, error) {
+                                console.error("❌ Error en AJAX:", error);
+                                console.error("📄 Respuesta del servidor:", xhr.responseText);
+                                Swal.fire({
+                                    title: "Error",
+                                    text: "No se pudo eliminar el usuario.",
+                                    icon: "error"
+                                });
+                            }
+                        });
+                    } else {
+                        console.log("🟡 Eliminación cancelada por el usuario.");
+                    }
+                });
+            });
+        });
+    </script>
+
+}

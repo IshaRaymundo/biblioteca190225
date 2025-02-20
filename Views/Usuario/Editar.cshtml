@@ -1,4 +1,4 @@
-﻿@model Biblioteca_Jonathan_Hernandez.Models.Domain.Usuario
+﻿@model Biblioteca_Mia_Raymundo.Models.Domain.Usuario
 
 @{
     Layout = "_LayoutDashBoard";
@@ -14,23 +14,28 @@
             <div class="card-body">
                 <form asp-action="Editar" method="post">
 
+                    <!-- Campo oculto con el ID del usuario -->
                     <input asp-for="PkUsuario" type="hidden" />
 
                     <div class="form-group">
                         <label asp-for="Nombre" class="control-label"></label>
                         <input asp-for="Nombre" class="form-control" placeholder="Ingresa el nombre" required />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
                     </div>
 
                     <div class="form-group">
                         <label asp-for="UserName" class="control-label"></label>
                         <input asp-for="UserName" class="form-control" placeholder="Ingresa el usuario" required />
+                        <span asp-validation-for="UserName" class="text-danger"></span>
                     </div>
 
                     <div class="form-group">
                         <label asp-for="Password" class="control-label"></label>
                         <input asp-for="Password" type="password" class="form-control" placeholder="Ingresa la contraseña" required />
+                        <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
 
+                   
                     <div class="form-group mt-3">
                         <button type="submit" class="btn btn-secondary d-block mx-auto">
                             <i class="bi bi-person-fill"></i> Guardar
@@ -45,3 +50,9 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

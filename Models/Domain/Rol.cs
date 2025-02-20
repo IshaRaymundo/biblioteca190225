@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace Biblioteca_Jonathan_Hernandez.Models.Domain
+namespace Biblioteca_Mia_Raymundo.Models.Domain
 {
     public class Rol
     {

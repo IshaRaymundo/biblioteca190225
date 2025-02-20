@@ -1,21 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]Biblioteca Jonathan Hernandez</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Biblioteca_Jonathan_Hernandez.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] Biblioteca Mia </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/Biblioteca_Mia_Raymundo.styles.css" asp-append-version="true">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <style>
-        /* Estilos mejorados para el sidebar */
         .sidebar {
             width: 260px;
             height: 100vh;
             position: fixed;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            background: linear-gradient(to bottom, #481040, #8A2BE2); 
             color: white;
             padding-top: 20px;
             transition: all 0.3s;
@@ -25,90 +24,99 @@
         }
 
             .sidebar h3 {
-                font-size: 22px;
                 text-align: center;
-                margin-bottom: 20px;
                 font-weight: bold;
-                letter-spacing: 1px;
+                margin-bottom: 20px;
             }
 
             .sidebar a {
                 display: flex;
                 align-items: center;
-                gap: 12px;
                 padding: 12px 20px;
                 color: white;
                 text-decoration: none;
                 font-size: 18px;
-                transition: background 0.3s, transform 0.2s;
+                transition: all 0.3s;
                 border-radius: 8px;
                 margin: 5px 15px;
             }
-
-                .sidebar a i {
-                    font-size: 22px;
-                    width: 30px;
-                    text-align: center;
-                }
 
                 .sidebar a:hover {
                     background: rgba(255, 255, 255, 0.2);
                     transform: scale(1.05);
                 }
 
+            .sidebar i {
+                font-size: 22px;
+                width: 30px;
+                text-align: center;
+            }
+
+        /* Botón de colapso */
+        .toggle-btn {
+            position: absolute;
+            top: 10px;
+            right: -40px;
+            background: #4B0082;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: white;
+            transition: all 0.3s;
+        }
+
+            .toggle-btn:hover {
+                background: #8A2BE2;
+            }
+
+        /* Sidebar colapsado */
+        .sidebar.collapsed {
+            width: 70px;
+        }
+
+            .sidebar.collapsed h3,
+            .sidebar.collapsed span {
+                display: none;
+            }
+
+            .sidebar.collapsed a {
+                justify-content: center;
+            }
+
+            .sidebar.collapsed i {
+                margin: 0;
+            }
+
         .content {
             margin-left: 260px;
             padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            transition: margin-left 0.3s;
         }
 
-        .header {
-            background: #1e3c72;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 22px;
-            font-weight: bold;
-            border-radius: 0 0 10px 10px;
-        }
-
-        .main-content {
-            flex: 1;
-        }
-
-        .footer {
-            background: #2a5298;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            border-radius: 10px 10px 0 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+            .content.expanded {
+                margin-left: 70px;
+            }
     </style>
 </head>
 <body>
     <div class="d-flex">
-        <!-- Sidebar Mejorado -->
-        <div class="sidebar">
-            <h3>📚 Biblioteca</h3>
-            <a asp-area="" asp-controller="Usuario" asp-action="Index"><i class="fas fa-home"></i> Inicio</a>
-            <a asp-area="" asp-controller="Home" asp-action="Contact"><i class="fas fa-envelope"></i> Contacto</a>
-            <a asp-area="" asp-controller="Home" asp-action="Config"><i class="fas fa-cogs"></i> Configuración</a>
-            <a asp-area="" asp-controller="Home" asp-action="Users"><i class="fas fa-users"></i> Usuarios</a>
-            <a asp-area="" asp-controller="Home" asp-action="Libros"><i class="fas fa-book"></i> Libros</a>
-            <a asp-area="" asp-controller="Home" asp-action="Prestamos"><i class="fas fa-hand-holding"></i> Préstamos</a>
-            <a asp-area="" asp-controller="Home" asp-action="Reportes"><i class="fas fa-chart-bar"></i> Reportes</a>
-            <a asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-question-circle"></i> Ayuda</a>
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+            <h3>Biblionline</h3>
+            <a asp-area="" asp-controller="Usuario" asp-action="Index"><i class="fas fa-home"></i> <span>Inicio</span></a>
+@*             <a asp-area="" asp-controller="Home" asp-action="Contact"><i class="fas fa-envelope"></i> <span>Contacto</span></a>
+ *@            <a asp-area="" asp-controller="Home" asp-action="Users"><i class="fas fa-users"></i> <span>Usuarios</span></a>
+            <a asp-area="" asp-controller="Home" asp-action="Libros"><i class="fas fa-book"></i> <span>Libros</span></a>
+            <a asp-area="" asp-controller="Home" asp-action="Prestamos"><i class="fas fa-hand-holding"></i> <span>Préstamos</span></a>
+            <a asp-area="" asp-controller="Home" asp-action="Config"><i class="fas fa-cogs"></i> <span>Configuración</span></a>
+
+@*             <a asp-area="" asp-controller="Home" asp-action="Reportes"><i class="fas fa-chart-bar"></i> <span>Reportes</span></a>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-question-circle"></i> <span>Ayuda</span></a> *@
         </div>
 
-        <!-- Contenido Principal -->
-        <div class="content w-100">
+        <div class="content" id="content">
             <header class="header">
-                Panel de Administración
             </header>
 
             <div class="container main-content">
@@ -117,16 +125,21 @@
                 </main>
             </div>
 
-            <footer class="footer mt-4">
-                &copy; 2025 - Biblioteca Jonathan Hernandez -
-                <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color: white; text-decoration: none;">Privacidad</a>
-            </footer>
         </div>
     </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("collapsed");
+            document.getElementById("content").classList.toggle("expanded");
+        }
+    </script>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

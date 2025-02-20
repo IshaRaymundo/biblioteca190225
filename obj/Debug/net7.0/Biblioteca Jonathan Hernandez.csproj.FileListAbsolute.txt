@@ -74,3 +74,84 @@
 /Users/jonathanhernandez/Documents/Majo/Library/obj/Debug/net7.0/Biblioteca Jonathan Hernandez.genruntimeconfig.cache
 /Users/jonathanhernandez/Documents/Majo/Library/obj/Debug/net7.0/ref/Biblioteca Jonathan Hernandez.dll
 /Users/jonathanhernandez/Documents/Majo/Library/obj/Debug/net7.0/Biblioteca Jonathan Hernandez.csproj.CopyComplete
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\appsettings.Development.json
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\appsettings.json
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Biblioteca Jonathan Hernandez.staticwebassets.runtime.json
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Biblioteca Jonathan Hernandez.staticwebassets.endpoints.json
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Biblioteca Jonathan Hernandez.exe
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Biblioteca Jonathan Hernandez.deps.json
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Biblioteca Jonathan Hernandez.runtimeconfig.json
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Biblioteca Jonathan Hernandez.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Biblioteca Jonathan Hernandez.pdb
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Azure.Core.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Azure.Identity.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Humanizer.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.CodeDom.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.Memory.Data.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\UT\8vo\majo\biblioteca\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.csproj.AssemblyReference.cache
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.GeneratedMSBuildEditorConfig.editorconfig
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.AssemblyInfoInputs.cache
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.AssemblyInfo.cs
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.csproj.CoreCompileInputs.cache
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.MvcApplicationPartsAssemblyInfo.cache
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.RazorAssemblyInfo.cache
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.RazorAssemblyInfo.cs
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.sourcelink.json
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\scopedcss\Views\Shared\_LayoutDashBoard.cshtml.rz.scp.css
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\scopedcss\bundle\Biblioteca Jonathan Hernandez.styles.css
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\scopedcss\projectbundle\Biblioteca Jonathan Hernandez.bundle.scp.css
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets.build.json
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets.development.json
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets\msbuild.Biblioteca Jonathan Hernandez.Microsoft.AspNetCore.StaticWebAssets.props
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets\msbuild.Biblioteca Jonathan Hernandez.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets\msbuild.build.Biblioteca Jonathan Hernandez.props
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Biblioteca Jonathan Hernandez.props
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Biblioteca Jonathan Hernandez.props
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets.pack.json
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\staticwebassets.upToDateCheck.txt
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Bibliote.1E8C85B3.Up2Date
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.dll
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\refint\Biblioteca Jonathan Hernandez.dll
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.pdb
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\Biblioteca Jonathan Hernandez.genruntimeconfig.cache
+D:\UT\8vo\majo\biblioteca\obj\Debug\net7.0\ref\Biblioteca Jonathan Hernandez.dll

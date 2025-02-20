@@ -1,0 +1,9 @@
+﻿@model Biblioteca_Mia_Raymundo.Models.Domain.Usuario
+
+<h2>¿Estás seguro de que quieres eliminar a @Model.Nombre?</h2>
+
+<form asp-action="EliminarConfirmado" method="post">
+    <input type="hidden" asp-for="PkUsuario" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

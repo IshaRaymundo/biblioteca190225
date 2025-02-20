@@ -1,9 +1,9 @@
-﻿using Biblioteca_Jonathan_Hernandez.Context;
-using Biblioteca_Jonathan_Hernandez.Models.Domain;
+﻿using Biblioteca_Mia_Raymundo.Context;
+using Biblioteca_Mia_Raymundo.Models.Domain;
 using Microsoft.EntityFrameworkCore;
-using Biblioteca_Jonathan_Hernandez.Services.IServices;
+using Biblioteca_Mia_Raymundo.Services.IServices;
 
-namespace Biblioteca_Jonathan_Hernandez.Services.Services
+namespace Biblioteca_Mia_Raymundo.Services.Services
 {
     public class UsuarioService : IUsuarioService
     {
@@ -75,6 +75,49 @@ namespace Biblioteca_Jonathan_Hernandez.Services.Services
             catch (Exception ex)
             {
                 throw new Exception("Sucedio un error: " + ex.Message);
+            }
+        }
+        // Actualizar un usuario existente
+        public bool ActualizarUsuario(int id, Usuario request)
+        {
+            try
+            {
+                var usuario = _context.Usuarios.Find(id);
+                if (usuario == null)
+                {
+                    throw new Exception("Usuario no encontrado.");
+                }
+
+                usuario.Nombre = request.Nombre;
+                usuario.UserName = request.UserName;
+                usuario.Password = request.Password;
+
+                _context.Usuarios.Update(usuario);
+                return _context.SaveChanges() > 0;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Sucedió un error: " + ex.Message);
+            }
+        }
+
+        // Eliminar un usuario
+        public bool EliminarUsuario(int id)
+        {
+            try
+            {
+                var usuario = _context.Usuarios.Find(id);
+                if (usuario == null)
+                {
+                    throw new Exception("Usuario no encontrado.");
+                }
+
+                _context.Usuarios.Remove(usuario);
+                return _context.SaveChanges() > 0;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Sucedió un error: " + ex.Message);
             }
         }
 

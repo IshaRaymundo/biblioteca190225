@@ -1,10 +1,10 @@
-﻿using Biblioteca_Jonathan_Hernandez.Context;
-using Biblioteca_Jonathan_Hernandez.Models;
-using Biblioteca_Jonathan_Hernandez.Models.Domain;
+﻿using Biblioteca_Mia_Raymundo.Context;
+using Biblioteca_Mia_Raymundo.Models;
+using Biblioteca_Mia_Raymundo.Models.Domain;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Biblioteca_Jonathan_Hernandez.Controllers
+namespace Biblioteca_Mia_Raymundo.Controllers
 {
     public class HomeController : Controller
     {

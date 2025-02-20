@@ -1,8 +1,8 @@
-﻿using Biblioteca_Jonathan_Hernandez.Models.Domain;
+﻿using Biblioteca_Mia_Raymundo.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Biblioteca_Jonathan_Hernandez.Context
+namespace Biblioteca_Mia_Raymundo.Context
 {
     public class ApplicationDbContext : DbContext
     {

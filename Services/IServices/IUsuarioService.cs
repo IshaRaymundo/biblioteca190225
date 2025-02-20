@@ -1,6 +1,6 @@
-﻿using Biblioteca_Jonathan_Hernandez.Models.Domain;
+﻿using Biblioteca_Mia_Raymundo.Models.Domain;
 
-namespace Biblioteca_Jonathan_Hernandez.Services.IServices
+namespace Biblioteca_Mia_Raymundo.Services.IServices
 {
     public interface IUsuarioService
     {
@@ -10,5 +10,7 @@ namespace Biblioteca_Jonathan_Hernandez.Services.IServices
         public bool CrearUsuario(Usuario request);
 
         public Usuario GetUsuarioById(int id);
+        public bool ActualizarUsuario(int id, Usuario request);
+        public bool EliminarUsuario(int id);
     }
 }

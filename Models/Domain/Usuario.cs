@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Biblioteca_Jonathan_Hernandez.Models.Domain
+namespace Biblioteca_Mia_Raymundo.Models.Domain
 {
     public class Usuario
     {
