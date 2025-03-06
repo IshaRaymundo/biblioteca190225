@@ -10,6 +10,10 @@ namespace Biblioteca_Mia_Raymundo.Context
         //modelos a mapear
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Rol> Roles { get; set; }
+        public DbSet<Libro> Libros { get; set; }
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Primero insertar los Roles

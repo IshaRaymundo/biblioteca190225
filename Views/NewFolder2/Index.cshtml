@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Biblioteca_Mia_Raymundo.Models.Domain.Libro>
+
+@{
+    Layout = "_LayoutDashBoard";
+}
+
+<div class="container mt-4">
+    <h2>Libros</h2>
+
+    <a asp-action="Create" class="btn btn-success mb-3">Agregar Libro</a>
+
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Autor</th>
+                <th>Año</th>
+                <th>Género</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var libro in Model)
+            {
+                <tr>
+                    <td>@libro.PkLibro</td>
+                    <td>@libro.Nombre</td>
+                    <td>@libro.Autor</td>
+                    <td>@libro.Anio</td>
+                    <td>@libro.Genero</td>
+                    <td>
+                        <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@libro.PkLibro">Editar</a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@libro.PkLibro">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

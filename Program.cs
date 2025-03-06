@@ -14,6 +14,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
