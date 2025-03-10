@@ -4,9 +4,11 @@
     Layout = "_LayoutDashBoard";
 }
 
-<h2>Agregar Libro</h2>
+<h2>Editar Libro</h2>
 
-<form asp-action="Create">
+<form asp-action="Edit" asp-route-id="@Model.PkLibro" method="post">
+    <input type="hidden" asp-for="PkLibro" /> <!-- Campo oculto para el ID -->
+
     <div class="form-group">
         <label asp-for="Nombre"></label>
         <input asp-for="Nombre" class="form-control">

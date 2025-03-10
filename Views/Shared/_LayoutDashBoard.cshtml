@@ -100,7 +100,6 @@
     </style>
 </head>
 <body>
-    <div class="d-flex">
         <div class="sidebar" id="sidebar">
             <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
             <h3>Biblionline</h3>
@@ -120,13 +119,12 @@
             </header>
 
             <div class="container main-content">
-                <main role="main" class="pb-3">
+                <main role="main" class="">
                     @RenderBody()
                 </main>
             </div>
 
         </div>
-    </div>
 
     <script>
         function toggleSidebar() {
