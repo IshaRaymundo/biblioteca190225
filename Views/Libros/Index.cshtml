@@ -1,51 +1,54 @@
-﻿@model IEnumerable<Biblioteca_Mia_Raymundo.Models.Domain.Usuario>
+﻿@model IEnumerable<Biblioteca_Mia_Raymundo.Models.Domain.Libro>
+
 @{
     Layout = "_LayoutDashBoard";
 }
 
-<h1>Dashboard desde Views>Usuario>Index</h1>
+<h1>Dashboard de Libros</h1>
 
 <div class="container-fluid">
     <div class="card border">
         <div class="card-header bg-dark">
-            <h1 class="text-white"><strong>Lista de usuarios</strong></h1>
+            <h1 class="text-white"><strong>Lista de Libros</strong></h1>
         </div>
 
         <div class="card-body">
-            <!-- Botón para agregar usuario -->
+            <!-- Botón para agregar libro -->
             <div class="d-flex justify-content-between mb-3">
-                <a asp-action="Crear" asp-controller="Usuario" class="btn btn-success">
-                    <i class="fa-solid fa-user-plus"></i> Nuevo Usuario
+                <a asp-action="Create" class="btn btn-success">
+                    <i class="fa-solid fa-book-medical"></i> Nuevo Libro
                 </a>
             </div>
 
             <div class="table-responsive">
                 @if (Model.Any())
                 {
-                    <table class="table table-bordered" id="tblUsuarios">
+                    <table class="table table-bordered" id="tblLibros">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>@Html.DisplayNameFor(x => x.Nombre)</th>
-                                <th>@Html.DisplayNameFor(x => x.UserName)</th>
-                                <th>@Html.DisplayNameFor(x => x.Password)</th>
-                                <th>@Html.DisplayNameFor(x => x.FkRol)</th>
+                                <th>@Html.DisplayNameFor(x => x.Autor)</th>
+                                <th>@Html.DisplayNameFor(x => x.Anio)</th>
+                                <th>@Html.DisplayNameFor(x => x.Genero)</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var Item in Model)
+                            @foreach (var libro in Model)
                             {
                                 <tr>
-                                    <td>@Item.Nombre</td>
-                                    <td>@Item.UserName</td>
-                                    <td>@Item.Password</td>
-                                    <td>@Item.Roles.Nombre</td>
+                                    <td>@libro.PkLibro</td>
+                                    <td>@libro.Nombre</td>
+                                    <td>@libro.Autor</td>
+                                    <td>@libro.Anio</td>
+                                    <td>@libro.Genero</td>
                                     <td>
-                                        <a class="btn btn-warning" asp-action="Editar" asp-route-id="@Item.PkUsuario">
+                                        <a class="btn btn-warning" asp-action="Edit" asp-route-id="@libro.PkLibro">
                                             <i class="fa-solid fa-pen-to-square"></i> Editar
                                         </a>
-                                        <button class="btn btn-danger eliminar-usuario"
-                                                data-id="@Item.PkUsuario" data-nombre="@Item.Nombre">
+                                        <button class="btn btn-danger eliminar-libro"
+                                                data-id="@libro.PkLibro" data-nombre="@libro.Nombre">
                                             <i class="fa-solid fa-trash"></i> Eliminar
                                         </button>
                                     </td>
@@ -56,17 +59,17 @@
                 }
                 else
                 {
-                    <p>No hay registros</p>
+                    <p>No hay libros registrados</p>
                 }
             </div>
         </div>
-
     </div>
 </div>
+
 @section Scripts {
     <script>
         $(document).ready(function () {
-            console.log("✅ Script cargado correctamente");
+            console.log("✅ Script de libros cargado correctamente");
 
             // Verifica si jQuery está cargado
             if (typeof $ === 'undefined') {
@@ -76,7 +79,7 @@
             }
 
             // Inicializar DataTables
-            $('#tblUsuarios').DataTable({
+            $('#tblLibros').DataTable({
                 language: {
                     "emptyTable": "No hay información",
                     "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
@@ -92,23 +95,23 @@
             });
 
             // Delegar evento para los botones de eliminar
-            $(document).on('click', '.eliminar-usuario', function () {
-                console.log("🟢 Se hizo clic en un botón de eliminar");
+            $(document).on('click', '.eliminar-libro', function () {
+                console.log("🟢 Se hizo clic en un botón de eliminar libro");
 
-                var usuarioId = $(this).data('id');
-                var usuarioNombre = $(this).data('nombre');
+                var libroId = $(this).data('id');
+                var libroNombre = $(this).data('nombre');
 
-                if (!usuarioId) {
+                if (!libroId) {
                     console.error("❌ Error: data-id no está definido en el botón de eliminar.");
                     return;
                 }
 
-                console.log(`🟢 ID del usuario a eliminar: ${usuarioId}`);
-                console.log(`🟢 Nombre del usuario a eliminar: ${usuarioNombre}`);
+                console.log(`🟢 ID del libro a eliminar: ${libroId}`);
+                console.log(`🟢 Nombre del libro a eliminar: ${libroNombre}`);
 
                 Swal.fire({
                     title: "¿Estás seguro?",
-                    text: "Eliminarás a " + usuarioNombre + ". Esta acción no se puede deshacer.",
+                    text: "Eliminarás el libro " + libroNombre + ". Esta acción no se puede deshacer.",
                     icon: "warning",
                     showCancelButton: true,
                     confirmButtonColor: "#3085d6",
@@ -117,11 +120,13 @@
                     cancelButtonText: "Cancelar"
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        console.log("🟢 Usuario confirmado para eliminación, enviando petición AJAX...");
+                        console.log("🟢 Libro confirmado para eliminación, enviando petición AJAX...");
 
                         $.ajax({
-                            url: '/Usuario/EliminarUsuario/' + usuarioId,
-                            type: 'DELETE',
+                            url: '/Libros/Delete/' + libroId,
+                            type: 'POST',
+                                contentType: 'application/json', // Indicar que la petición es JSON
+
                             success: function (response) {
                                 console.log("🟢 Respuesta del servidor:", response);
 
@@ -149,7 +154,7 @@
                                 console.error("📄 Respuesta del servidor:", xhr.responseText);
                                 Swal.fire({
                                     title: "Error",
-                                    text: "No se pudo eliminar el usuario.",
+                                    text: "No se pudo eliminar el libro.",
                                     icon: "error"
                                 });
                             }
@@ -161,5 +166,4 @@
             });
         });
     </script>
-
 }

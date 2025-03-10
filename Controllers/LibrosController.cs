@@ -1,90 +1,89 @@
-﻿using Biblioteca_Mia_Raymundo.Context;
-using Biblioteca_Mia_Raymundo.Models.Domain;
+﻿using Biblioteca_Mia_Raymundo.Models.Domain;
+using Biblioteca_Mia_Raymundo.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 
-namespace Biblioteca_Mia_Raymundo.Controllers
+public class LibrosController : Controller
 {
-    public class LibrosController : Controller
+    private readonly ILibroService _libroService;
+
+    public LibrosController(ILibroService libroService)
     {
-        private readonly ApplicationDbContext _context;
-
-        public LibrosController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
-
-        public async Task<IActionResult> Index()
-        {
-            var libros = await _context.Libros.ToListAsync();
-            return View(libros);
-        }
-
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Libro libro)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(libro);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(libro);
-        }
-
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null) return NotFound();
-
-            var libro = await _context.Libros.FindAsync(id);
-            if (libro == null) return NotFound();
-
-            return View(libro);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Libro libro)
-        {
-            if (id != libro.PkLibro) return NotFound();
-
-            if (ModelState.IsValid)
-            {
-                _context.Update(libro);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(libro);
-        }
-
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null) return NotFound();
-
-            var libro = await _context.Libros.FindAsync(id);
-            if (libro == null) return NotFound();
-
-            return View(libro);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var libro = await _context.Libros.FindAsync(id);
-            if (libro != null)
-            {
-                _context.Libros.Remove(libro);
-                await _context.SaveChangesAsync();
-            }
-            return RedirectToAction(nameof(Index));
-        }
+        _libroService = libroService;
     }
+
+    // Obtener todos los libros
+    [HttpGet]
+    public IActionResult Index() 
+    {
+        var libros = _libroService.ObtenerLibros();
+        return View(libros); // Devuelve la vista con los libros
+    }
+
+    // Crear un nuevo libro
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View(); 
+    }
+
+    // Crear libro - Guardar
+    [HttpPost]
+    public IActionResult Create(Libro libro)
+    {
+        if (ModelState.IsValid)
+        {
+            _libroService.CrearLibro(libro);
+            return RedirectToAction("Index");
+        }
+        return View(libro);
+    }
+
+    // Editar un libro - Formulario
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        var libro = _libroService.GetLibroById(id);
+        if (libro == null)
+        {
+            return NotFound();
+        }
+        return View(libro); 
+    }
+
+    // Editar libro - Guardar cambios
+    [HttpPost]
+    public IActionResult Edit(int id, Libro libro)
+    {
+        if (id != libro.PkLibro)
+        {
+            return BadRequest();
+        }
+
+        if (_libroService.ActualizarLibro(id, libro))
+        {
+            return RedirectToAction("Index"); 
+        }
+
+        return View(libro); 
+    }
+
+    // Eliminar un libro
+    [HttpPost]
+    public IActionResult Delete(int id)
+    {
+        var libro = _libroService.GetLibroById(id);
+        if (libro == null)
+        {
+            return NotFound();
+        }
+
+        if (_libroService.EliminarLibro(id))
+        {
+            return Ok(new { success = true, message = "Libro eliminado correctamente." });
+        }
+
+        return BadRequest(new { success = false, message = "No se pudo eliminar el libro." });
+    }
+
+
 }

@@ -52,12 +52,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/NewFolder2/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3Rm9sZGVyMlxDcmVhdGUuY3NodG1s
+[D:/UT/8vo/majo/biblioteca/Views/Libros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/NewFolder2/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3Rm9sZGVyMlxJbmRleC5jc2h0bWw=
+[D:/UT/8vo/majo/biblioteca/Views/Libros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/UT/8vo/majo/biblioteca/Views/Libros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/UT/8vo/majo/biblioteca/Views/Libros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/UT/8vo/majo/biblioteca/Views/Shared/Error.cshtml]

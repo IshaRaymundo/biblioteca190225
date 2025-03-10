@@ -1,0 +1,23 @@
+﻿@model Biblioteca_Mia_Raymundo.Models.Domain.Libro
+
+@{
+    Layout = "_LayoutDashBoard";
+}
+
+<h2>Eliminar Libro</h2>
+<p>¿Estás seguro de que deseas eliminar este libro?</p>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Nombre</h5>
+        <p class="card-text"><strong>Autor:</strong> @Model.Autor</p>
+        <p class="card-text"><strong>Año:</strong> @Model.Anio</p>
+        <p class="card-text"><strong>Género:</strong> @Model.Genero</p>
+    </div>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="PkLibro" />
+    <button type="submit" class="btn btn-danger mt-3">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Cancelar</a>
+</form>

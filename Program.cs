@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Biblioteca_Mia_Raymundo.Context;
 using Biblioteca_Mia_Raymundo.Services.IServices;
 using Biblioteca_Mia_Raymundo.Services.Services;
+using Biblioteca_Mia_Raymundo.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
     builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<ILibroService, LibroService>();
+
 
 
 var app = builder.Build();

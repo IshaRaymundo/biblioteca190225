@@ -10,6 +10,12 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
+    <Compile Remove="Views\NewFolder2\**" />
+    <Content Remove="Views\NewFolder2\**" />
+    <EmbeddedResource Remove="Views\NewFolder2\**" />
+    <None Remove="Views\NewFolder2\**" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Remove="Migrations\20250305135632_AddLibroTable.cs" />
     <Compile Remove="Migrations\20250305141327_AddLibroTable.cs" />
     <Compile Remove="Migrations\20250305141327_AddLibroTable.Designer.cs" />
