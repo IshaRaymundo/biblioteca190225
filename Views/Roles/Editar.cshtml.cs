@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Biblioteca_Mia_Raymundo.Views.NewFolder2
+namespace Biblioteca_Mia_Raymundo.Views.Rol
 {
-    public class IndexModel : PageModel
+    public class EditarModel : PageModel
     {
         public void OnGet()
         {

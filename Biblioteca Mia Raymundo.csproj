@@ -35,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\NewFolder1\" />
+    <Folder Include="Views\NewFolder3\" />
     <Folder Include="Views\NewFolder\" />
   </ItemGroup>
 

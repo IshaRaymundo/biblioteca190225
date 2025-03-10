@@ -1,0 +1,17 @@
+﻿@model Biblioteca_Mia_Raymundo.Models.Domain.Rol
+
+@{
+    Layout = "_LayoutDashBoard";
+}
+
+<h1>Nuevo Rol</h1>
+
+<form asp-action="Crear">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary mt-2">Cancelar</a>
+</form>

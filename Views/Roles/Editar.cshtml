@@ -1,0 +1,19 @@
+﻿@model Biblioteca_Mia_Raymundo.Models.Domain.Rol
+
+@{
+    Layout = "_LayoutDashBoard";
+}
+
+<h2>Editar Rol</h2>
+
+<form asp-action="Editar" asp-controller="Roles" method="post">
+    <input type="hidden" asp-for="PkRol" />
+
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Actualizar</button>
+    <a asp-action="Index" class="btn btn-secondary mt-2">Cancelar</a>
+</form>

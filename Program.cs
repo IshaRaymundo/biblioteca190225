@@ -15,6 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
 builder.Services.AddTransient<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<ILibroService, LibroService>();
+builder.Services.AddScoped<IRolService, RolService>();
 
 
 
