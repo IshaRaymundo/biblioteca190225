@@ -11,6 +11,7 @@ namespace Biblioteca_Mia_Raymundo.Models.Domain
         public string Nombre { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
+        public string Email { get; set; }
 
         [ForeignKey("Roles")]
         public int FkRol { get; set; }

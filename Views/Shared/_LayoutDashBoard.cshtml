@@ -14,7 +14,7 @@
             width: 260px;
             height: 100vh;
             position: fixed;
-            background: linear-gradient(to bottom, #481040, #8A2BE2); 
+            background: linear-gradient(to bottom, #481040, #8A2BE2);
             color: white;
             padding-top: 20px;
             transition: all 0.3s;
@@ -97,34 +97,60 @@
             .content.expanded {
                 margin-left: 70px;
             }
+
+        /* Estilos del botón de cerrar sesión */
+        .logout-btn {
+            margin-top: auto; /* Empuja el botón hacia abajo */
+            background-color: #d9534f; /* Rojo de Bootstrap */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+        }
+
+            .logout-btn:hover {
+                background-color: #c9302c; /* Rojo oscuro de Bootstrap */
+                transform: scale(1.05);
+            }
+
+            .logout-btn:focus {
+                outline: none;
+            }
     </style>
 </head>
 <body>
-        <div class="sidebar" id="sidebar">
-            <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-            <h3>Biblionline</h3>
-            <a asp-area="" asp-controller="Usuario" asp-action="Index"><i class="fas fa-home"></i> <span>Usuarios</span></a>
-             <a asp-area="" asp-controller="Roles" asp-action="Index"><i class="fas fa-envelope"></i> <span>Roles</span></a>
-@*             <a asp-area="" asp-controller="Home" asp-action="Users"><i class="fas fa-users"></i> <span>Usuarios</span></a>
- *@            <a asp-area="" asp-controller="Libros" asp-action="Index"><i class="fas fa-book"></i> <span>Libros</span></a>
-            <a asp-area="" asp-controller="Home" asp-action="Prestamos"><i class="fas fa-hand-holding"></i> <span>Préstamos</span></a>
-            <a asp-area="" asp-controller="Home" asp-action="Config"><i class="fas fa-cogs"></i> <span>Configuración</span></a>
+    <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <h3>Biblionline</h3>
+        <a asp-area="" asp-controller="Usuario" asp-action="Index"><i class="fas fa-home"></i> <span>Usuarios</span></a>
+        <a asp-area="" asp-controller="Roles" asp-action="Index"><i class="fas fa-envelope"></i> <span>Roles</span></a>
+        <a asp-area="" asp-controller="Libros" asp-action="Index"><i class="fas fa-book"></i> <span>Libros</span></a>
+        <a asp-area="" asp-controller="Home" asp-action="Prestamos"><i class="fas fa-hand-holding"></i> <span>Préstamos</span></a>
+        <a asp-area="" asp-controller="Home" asp-action="Config"><i class="fas fa-cogs"></i> <span>Configuración</span></a>
+        <a asp-area="" asp-controller="Home" asp-action="Reportes"><i class="fas fa-chart-bar"></i> <span>Reportes</span></a>
+        <a asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-question-circle"></i> <span>Ayuda</span></a>
 
-             <a asp-area="" asp-controller="Home" asp-action="Reportes"><i class="fas fa-chart-bar"></i> <span>Reportes</span></a>
-            <a asp-area="" asp-controller="Home" asp-action="Privacy"><i class="fas fa-question-circle"></i> <span>Ayuda</span></a> 
+        <!-- Botón de Cerrar sesión -->
+        <form action="/logout" method="post" class="mt-auto">
+            <button type="submit" class="logout-btn">Cerrar sesión</button>
+        </form>
+    </div>
+
+    <div class="content" id="content">
+        <header class="header">
+        </header>
+
+        <div class="container main-content">
+            <main role="main" class="">
+                @RenderBody()
+            </main>
         </div>
 
-        <div class="content" id="content">
-            <header class="header">
-            </header>
-
-            <div class="container main-content">
-                <main role="main" class="">
-                    @RenderBody()
-                </main>
-            </div>
-
-        </div>
+    </div>
 
     <script>
         function toggleSidebar() {

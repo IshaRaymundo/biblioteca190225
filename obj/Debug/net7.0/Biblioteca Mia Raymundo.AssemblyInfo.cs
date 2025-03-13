@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Biblioteca Mia Raymundo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ba002142fac6b5a700eb7021dc5734d24ae3da9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db8c9c1dcf11068619e1e44cca605246e199383a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Biblioteca Mia Raymundo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Biblioteca Mia Raymundo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

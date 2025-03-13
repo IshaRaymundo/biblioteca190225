@@ -20,6 +20,6 @@ namespace Biblioteca_Mia_Raymundo.Models.Domain
         public int Anio { get; set; }
 
         [Required(ErrorMessage = "El género es obligatorio.")]
-        public string Genero { get; set; }
+        public string PkGenero { get; set; }
     }
 }

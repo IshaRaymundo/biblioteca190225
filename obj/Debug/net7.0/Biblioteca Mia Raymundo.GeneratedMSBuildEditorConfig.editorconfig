@@ -9,113 +9,121 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Biblioteca_Mia_Raymundo
 build_property.RootNamespace = Biblioteca_Mia_Raymundo
-build_property.ProjectDir = D:\UT\8vo\majo\biblioteca\
+build_property.ProjectDir = D:\UT\8vo\ultimavez\biblionline\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\UT\8vo\majo\biblioteca
+build_property.MSBuildProjectDirectory = D:\UT\8vo\ultimavez\biblionline
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 7.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Home/Config.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Home/Config.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Home/Contact.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Home/Index.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Home/Libros.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Home/Libros.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaWJyb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Home/Prestamos.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Home/Prestamos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcmVzdGFtb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Home/Privacy.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Home/Reportes.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Home/Reportes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXBvcnRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Home/Users.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Home/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Libros/Create.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Libros/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Libros/Delete.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Libros/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Libros/Edit.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Libros/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Libros/Index.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Libros/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Roles/Crear.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Roles/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Roles/Editar.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Roles/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Roles/Index.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Shared/Error.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Usuario/Crear.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Usuario/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Usuario/Editar.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Usuario/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Usuario/Eliminar1.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Usuario/Eliminar1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFbGltaW5hcjEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Usuario/Index.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/_ViewImports.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/UT/8vo/ultimavez/biblionline/Views/Usuario/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/UT/8vo/ultimavez/biblionline/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/_ViewStart.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/UT/8vo/majo/biblioteca/Views/Shared/_Layout.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ue6j3o00zy
 
-[D:/UT/8vo/majo/biblioteca/Views/Shared/_LayoutDashBoard.cshtml]
+[D:/UT/8vo/ultimavez/biblionline/Views/Shared/_LayoutDashBoard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXREYXNoQm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jm0c76pldw

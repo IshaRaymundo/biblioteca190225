@@ -3,12 +3,11 @@
     Layout = "_LayoutDashBoard";
 }
 
-<h1>Dashboard desde Views>Usuario>Index</h1>
 
 <div class="container-fluid">
-    <div class="card border">
-        <div class="card-header bg-dark">
-            <h1 class="text-white"><strong>Lista de usuarios</strong></h1>
+    <div class="card border shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h1 class="m-0"><strong>Lista de usuarios</strong></h1>
         </div>
 
         <div class="card-body">
@@ -22,12 +21,11 @@
             <div class="table-responsive">
                 @if (Model.Any())
                 {
-                    <table class="table table-bordered" id="tblUsuarios">
+                    <table class="table table-striped table-bordered table-hover" id="tblUsuarios">
                         <thead>
-                            <tr>
+                            <tr class="table-dark">
                                 <th>@Html.DisplayNameFor(x => x.Nombre)</th>
                                 <th>@Html.DisplayNameFor(x => x.UserName)</th>
-                                <th>@Html.DisplayNameFor(x => x.Password)</th>
                                 <th>@Html.DisplayNameFor(x => x.FkRol)</th>
                                 <th>Acciones</th>
                             </tr>
@@ -38,13 +36,12 @@
                                 <tr>
                                     <td>@Item.Nombre</td>
                                     <td>@Item.UserName</td>
-                                    <td>@Item.Password</td>
                                     <td>@Item.Roles.Nombre</td>
                                     <td>
-                                        <a class="btn btn-warning" asp-action="Editar" asp-route-id="@Item.PkUsuario">
+                                        <a class="btn btn-warning btn-sm" asp-action="Editar" asp-route-id="@Item.PkUsuario">
                                             <i class="fa-solid fa-pen-to-square"></i> Editar
                                         </a>
-                                        <button class="btn btn-danger eliminar-usuario"
+                                        <button class="btn btn-danger btn-sm eliminar-usuario"
                                                 data-id="@Item.PkUsuario" data-nombre="@Item.Nombre">
                                             <i class="fa-solid fa-trash"></i> Eliminar
                                         </button>
@@ -60,21 +57,12 @@
                 }
             </div>
         </div>
-
     </div>
 </div>
+
 @section Scripts {
     <script>
         $(document).ready(function () {
-            console.log("✅ Script cargado correctamente");
-
-            // Verifica si jQuery está cargado
-            if (typeof $ === 'undefined') {
-                console.error("❌ jQuery NO está cargado.");
-            } else {
-                console.log("✅ jQuery está cargado correctamente.");
-            }
-
             // Inicializar DataTables
             $('#tblUsuarios').DataTable({
                 language: {
@@ -88,13 +76,13 @@
                         "next": "Siguiente",
                         "previous": "Anterior"
                     }
-                }
+                },
+                responsive: true, // Asegura que la tabla sea responsiva
+                pagingType: "full_numbers" // Pagina completa con números
             });
 
             // Delegar evento para los botones de eliminar
             $(document).on('click', '.eliminar-usuario', function () {
-                console.log("🟢 Se hizo clic en un botón de eliminar");
-
                 var usuarioId = $(this).data('id');
                 var usuarioNombre = $(this).data('nombre');
 
@@ -102,9 +90,6 @@
                     console.error("❌ Error: data-id no está definido en el botón de eliminar.");
                     return;
                 }
-
-                console.log(`🟢 ID del usuario a eliminar: ${usuarioId}`);
-                console.log(`🟢 Nombre del usuario a eliminar: ${usuarioNombre}`);
 
                 Swal.fire({
                     title: "¿Estás seguro?",
@@ -117,14 +102,10 @@
                     cancelButtonText: "Cancelar"
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        console.log("🟢 Usuario confirmado para eliminación, enviando petición AJAX...");
-
                         $.ajax({
                             url: '/Usuario/EliminarUsuario/' + usuarioId,
                             type: 'DELETE',
                             success: function (response) {
-                                console.log("🟢 Respuesta del servidor:", response);
-
                                 if (response.success) {
                                     Swal.fire({
                                         title: "¡Eliminado!",
@@ -136,7 +117,6 @@
                                         location.reload();
                                     });
                                 } else {
-                                    console.error("❌ Error en la eliminación:", response.message);
                                     Swal.fire({
                                         title: "Error",
                                         text: response.message,
@@ -145,8 +125,6 @@
                                 }
                             },
                             error: function (xhr, status, error) {
-                                console.error("❌ Error en AJAX:", error);
-                                console.error("📄 Respuesta del servidor:", xhr.responseText);
                                 Swal.fire({
                                     title: "Error",
                                     text: "No se pudo eliminar el usuario.",
@@ -154,12 +132,9 @@
                                 });
                             }
                         });
-                    } else {
-                        console.log("🟡 Eliminación cancelada por el usuario.");
                     }
                 });
             });
         });
     </script>
-
 }

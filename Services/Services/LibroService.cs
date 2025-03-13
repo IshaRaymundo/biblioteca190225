@@ -55,7 +55,7 @@ namespace Biblioteca_Mia_Raymundo.Services.Services
                     Nombre = request.Nombre,
                     Autor = request.Autor,
                     Anio = request.Anio,
-                    Genero = request.Genero
+                    PkGenero = request.PkGenero
                 };
 
                 _context.Libros.Add(libro);
@@ -81,7 +81,7 @@ namespace Biblioteca_Mia_Raymundo.Services.Services
                 libro.Nombre = request.Nombre;
                 libro.Autor = request.Autor;
                 libro.Anio = request.Anio;
-                libro.Genero = request.Genero;
+                libro.PkGenero = request.PkGenero;
 
                 _context.Libros.Update(libro);
                 return _context.SaveChanges() > 0;

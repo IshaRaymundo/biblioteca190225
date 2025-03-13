@@ -2,6 +2,7 @@
 using Biblioteca_Mia_Raymundo.Models.Domain;
 using Microsoft.EntityFrameworkCore;
 using Biblioteca_Mia_Raymundo.Services.IServices;
+using Microsoft.AspNetCore.Identity;
 
 namespace Biblioteca_Mia_Raymundo.Services.Services
 {
@@ -50,33 +51,65 @@ namespace Biblioteca_Mia_Raymundo.Services.Services
         }
 
         //Funcion para crear usuario
-        public bool CrearUsuario( Usuario request)
+        //public bool CrearUsuario( Usuario request)
+        //{
+        //    try
+        //    {
+        //        Usuario usuario = new Usuario()
+        //        {
+        //            Nombre = request.Nombre,
+        //            UserName = request.UserName,
+        //            Password = request.Password,
+        //            FkRol = 1
+        //        };
+
+        //        _context.Usuarios.Add(usuario);
+        //       int result = _context.SaveChanges();
+
+        //        if (result > 0)
+        //        {
+        //            return true;
+        //        }
+        //        return false;
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception("Sucedio un error: " + ex.Message);
+        //    }
+        //}
+        public bool CrearUsuario(Usuario request)
         {
+
             try
             {
+                var passwordHasher = new PasswordHasher<Usuario>();
+
                 Usuario usuario = new Usuario()
                 {
                     Nombre = request.Nombre,
                     UserName = request.UserName,
-                    Password = request.Password,
+                    Password = passwordHasher.HashPassword(request, request.Password),
+                    Email = request.Email,
                     FkRol = 1
                 };
-
                 _context.Usuarios.Add(usuario);
-               int result = _context.SaveChanges();
-
+                int result = _context.SaveChanges();
                 if (result > 0)
                 {
                     return true;
                 }
                 return false;
-
             }
             catch (Exception ex)
             {
-                throw new Exception("Sucedio un error: " + ex.Message);
+                var errorMessage = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
+                throw new Exception("Sucedió un error: " + errorMessage);
             }
+
+
         }
+
         // Actualizar un usuario existente
         public bool ActualizarUsuario(int id, Usuario request)
         {
